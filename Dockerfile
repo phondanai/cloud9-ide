@@ -11,7 +11,7 @@ RUN apt-get update && apt-get -y install git curl build-essential supervisor
 
 # ------------------------------------------------------------------------------
 # Install nodejs
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup | bash -
 RUN apt-get -y install nodejs
 
 # ------------------------------------------------------------------------------
