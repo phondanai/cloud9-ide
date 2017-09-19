@@ -2,8 +2,8 @@
 # Based on a work at https://github.com/docker/docker.
 # ------------------------------------------------------------------------------
 # Pull base image.
-FROM tutum/ubuntu:trusty
-MAINTAINER Agung Firdaus <agung@jagad.co.id>
+FROM debian:9
+MAINTAINER Phonanai Khanti <phondanai@gmail.com>
 
 # ------------------------------------------------------------------------------
 # Install dependencies
@@ -11,7 +11,7 @@ RUN apt-get update && apt-get -y install git curl build-essential supervisor
 
 # ------------------------------------------------------------------------------
 # Install nodejs
-RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get -y install nodejs
 
 # ------------------------------------------------------------------------------
